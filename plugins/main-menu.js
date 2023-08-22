@@ -49,13 +49,12 @@ Esᴄʀɪʙᴀ . ᴏᴡɴᴇʀ ᴘᴀʀᴀ ᴄᴏɴᴛᴀᴄᴛᴀʀ ᴀʟ ᴘʀ
 Ⓟ = 𝙿𝚛𝚎𝚖𝚒𝚞𝚖
 ⓓ = 𝙳𝚒𝚊𝚖𝚊𝚗𝚝𝚎𝚜
 -----  -----  -----  -----  -----
-  ≡ *LISTA DE MENUS*
+≡ *LISTA DE MENUS*
 `.trimStart(),
-  header: '┌─⊷ *%category*',
-  body: '▢ %cmd %isdiamond %isPremium',
-  footer: '└───────────\n',
-  after: `
-`,
+  header: '┏━━⊜ *_%category_*━⊜',
+  body: '┃⋄ %cmd %isdiamond %isPremium',
+  footer: '┗━━━━━━━━⬣\n',
+  after: 'ꜱɪᴍᴘʟᴇ ʙᴏᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ʙʏ ᴊᴀᴄᴋsɪᴛᴏ98',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
