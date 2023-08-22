@@ -37,7 +37,7 @@ const defaultMenu = {
 ─────────────
 ▢ Mas información 
 • 👤 *Owner*: @18295176783
-▢ 📍 Sigueme en ig
+• 📍 *Sigueme en ig*
 • instagram.com/Jack_paymon
 ─────────────
 %readmore
