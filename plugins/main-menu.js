@@ -28,17 +28,17 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-◈ ━━━━━ *DyLux  ┃ ᴮᴼᵀ* ━━━━━ ◈
+◈ ━━━━━ *Idy  ┃ ᴮᴼᵀ* ━━━━━ ◈
  
 👋🏻 _Hola_ *%name*
 🧿 Nivel : *%level* 
 👥 Usuarios : %totalreg
 📈 Tiempo activo : %muptime
 ─────────────
-▢ Crea tu propio bot 
-• https://youtu.be/xFqjKN1Qt80
-▢ Descarga *FGWhatsApp*
-• https://fgmods.epizy.com
+▢ Mas información 
+• 👤 *Owner*: @18295176783
+▢ 📍 Sigueme en ig
+• instagram.com/Jack_paymon
 ─────────────
 %readmore
 Ⓟ = Premium
