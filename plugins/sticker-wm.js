@@ -4,7 +4,6 @@ let handler = async (m, { conn, text, args }) => {
   if (!m.quoted) throw 'Responde a un sticker'
   let stiker = false
        let stick = args.join(" ").split("|");
-       let f = stick[0] !== "" ? stick[0] : packname;
        let g = typeof stick[1] !== "undefined" ? stick[1] : author;
   try {
     let mime = m.quoted.mimetype || ''
