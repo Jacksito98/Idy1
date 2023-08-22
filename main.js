@@ -193,7 +193,15 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Hola, @user\nBienvenido a @group'
+  conn.welcome = 'Hola, @user\nBienvenido a @group Por favor envié: 
+
+Foto de su cara completa, edad, nombre y de donde eres
+
+Evite taparse la cara, usar filtros, fotos con iluminación oscura y cuerpo completo porq nadie quiere ver tu cuerpo 
+
+Manda la foto para q se vea una sola vez 
+
+Gracias 💆‍♀️'
   conn.bye = 'adiós @user'
   conn.spromote = '@user promovió a admin'
   conn.sdemote = '@user degradado'
