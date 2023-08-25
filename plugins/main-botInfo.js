@@ -51,28 +51,32 @@ let infobt = `
 ▢ *${chats.length - groupsIn.length}* Chats privados
 ▢ *${chats.length}* Total Chats
 
+≡ *INFO BOT*
+  
+*ESTADO*
+▢ *${groupsIn.length}* Chats de grupo
+▢ *${groupsIn.length}* Grupos unidos
+▢ *${groupsIn.length - groupsIn.length}* Grupos abandonados
+▢ *${chats.length - groupsIn.length}* Chats privados
+▢ *${chats.length}* Total Chats
+
 *≡ OWNER*
-  *FG98*
+  *Jacksito*
 ▢ Instagram :
-  • https://instagram.com/fg98_ff
+  • https://instagram.com/Jack_paymon
 ▢ WhatsApp :
   • (escribe solo si es necesario) 
+  wa.mme/+12602000000
 ▢ GitHub :
-  • https://github.com/FG98F
+  • https://github.com
 ▢ Telegram : 
-  • t.me/fgsupp_bot (FG) 
-  • t.me/fg98ff (canal)
-  • t.me/fgawgp (grupo)
-▢ YouTube : 
-  • https://youtube.com/fg98f
+  • t.me/JacksitoR 
   
  *≡ HELPERS*
-  *CRISS*
-▢ Instagram : https://www.instagram.com/sayurizuniga3
-▢ WhatsApp : wa.me/
-  *ANDREA*
-▢ Instagram : https://
-▢ WhatsApp : wa.me/573125484672
+  *Mich❤️*
+▢ Instagram : http://instagram.com/Michelle._.177
+▢ WhatsApp : wa.me/18097157028
+
 
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
