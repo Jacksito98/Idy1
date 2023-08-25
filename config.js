@@ -34,9 +34,7 @@ global.fgyt = 'https://youtube.com'
 global.fgpyp = 'https://paypal.me/Jacksito23'
 global.fglog = 'https://i.imgur.com/Owmb93c.png' 
 
-//globals
 
-global.nyanregis = fs.readFileSync('./src/nyanregis.jpg')
 
 global.wait = '*⌛ _Cargando..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
