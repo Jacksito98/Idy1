@@ -10,7 +10,7 @@ https://chat.whatsapp.com/E3FSVfNufgBEKr04r3e2vk
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 ▢ Owner 
-wa.me/+1260200000
+wa.me/+12602000000
 
 ▢ *Telegram*
 • https://t.me/JacksitoR
