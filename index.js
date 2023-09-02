@@ -21,7 +21,7 @@ say('Idy -  JS98', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`'${name}' By @jack_paymon._`, {
+say(`Idy-bot By Jacksito Ig: @Jack_paymon`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
