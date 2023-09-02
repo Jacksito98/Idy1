@@ -1,27 +1,25 @@
-
-import { addExif } from '../lib/sticker.js'
-let handler = async (m, { conn, text, args }) => {
-  if (!m.quoted) throw 'Responde a un sticker'
-  let stiker = false
-       let stick = args.join(" ").split("|");
-       let f = stick[0] !== "" ? stick[0] : packname;
-       let g = typeof stick[1] !== "undefined" ? stick[1] : author;
-  try {
-    let mime = m.quoted.mimetype || ''
-    if (!/webp/.test(mime)) throw 'Responde a un sticker'
-    let img = await m.quoted.download()
-    if (!img) throw 'Responde a un sticker!'
-    stiker = await addExif(img, f, g)
-  } catch (e) {
-    console.error(e)
-    if (Buffer.isBuffer(e)) stiker = e
-  } finally {
-    if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, null, rpl)
-     else throw 'La conversión falló'
-  }
+const { sticker } = require('../lib/sticker')
+const uploadFile = require('../lib/uploadFile')
+const uploadImage = require('../lib/uploadImage')
+let { webp2png } = require('../lib/webp2mp4')
+let fetch = require("node-fetch")
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || ''
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('maksimal 10 detik')
+try {
+      let img = await q.download()
+   
+if(!img) throw `Reply image, *Example*: .wm` 
+conn.sendImageAsSticker(m.chat , img, m, {packname: text, author: ''})
+    } catch { throw 'Gagal!, Balas Gambar/video dengan caption *.wm*'}
 }
-handler.help = ['take <nombre>|<autor>']
+handler.help = ['wm', 'watermark']
 handler.tags = ['sticker']
-handler.command = ['take', 'wm'] 
+handler.command = /^wm|watermark?$/i
 
-export default handler
+module.exports = handler
+
+const isUrl = (text) => {
+  return text.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png)/, 'gi'))
+}
