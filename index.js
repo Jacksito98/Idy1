@@ -24,7 +24,7 @@ say('Idy -  JS98', {
 say(`Idy-bot By Jacksito Ig: @Jack_paymon`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  gradient: ['cyan', 'magenta']
 })
 
 var isRunning = false
