@@ -26,16 +26,5 @@ handler.help = ['audios']
 handler.tags = ['main']
 handler.command = ['test', 'audios'] 
 
-conn.sendMessage(m.chat, {
-text: text,
-contextInfo: {
-externalAdReply: {
-title: "乂 ©ＩＤＹ ٩(˘◡˘)۶ B O T Z",
-body: "",
-thumbnailUrl: "https://telegra.ph/file/63868752c14c0913fbb36.jpg",
-sourceUrl: "",
-mediaType: 1,
-renderLargerThumbnail: true
-}}}, { quoted: m})
 
 export default handler
