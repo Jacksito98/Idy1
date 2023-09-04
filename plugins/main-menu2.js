@@ -5,21 +5,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   
 let m2 =
 
-let handler = async(m) => {
-let motivasii = pickRandom(global.motivacion)
-    await conn.reply(m.chat, motivasii, 0, {
-    contextInfo: { mentionedJid: [m.sender],
-    externalAdReply :{
-    mediaUrl: '',
-    mediaType: 2,
-    title: 'Test （^_^）', 
-    body: 'Lee son Buenas😉',  
-    sourceUrl: "", 
-    thumbnailUrl: "https://i.ibb.co/xHqPNmQ/20230627-231554.jpg",
-      }}
-     })
-} `
-≡          <INFO DEL BOT + />
+`≡          <INFO DEL BOT + />
 
 
 ° 式 ⃟👨‍💻 Creador : @⁨Future Botに公式⁩
@@ -89,5 +75,22 @@ error por favor reportar con el comando .report
 handler.help = ['audios']
 handler.tags = ['main']
 handler.command = ['test', 'audios'] 
+
+let handler = async(m) => {
+let motivasii = pickRandom(global.motivacion)
+    await conn.reply(m.chat, motivasii, 0, {
+    contextInfo: { mentionedJid: [m.sender],
+    externalAdReply :{
+    mediaUrl: '',
+    mediaType: 2,
+    title: 'Test （^_^）', 
+    body: 'Lee son Buenas😉',  
+    sourceUrl: "", 
+    thumbnailUrl: "https://i.ibb.co/xHqPNmQ/20230627-231554.jpg",
+      }}
+     })
+} `
+
+   
 
 export default handler
