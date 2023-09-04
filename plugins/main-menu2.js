@@ -89,7 +89,7 @@ let motivasii = pickRandom(global.motivacion)
     thumbnailUrl: "https://i.ibb.co/xHqPNmQ/20230627-231554.jpg",
       }}
      })
-} `
+} 
 
    
 
